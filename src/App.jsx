@@ -5,16 +5,23 @@ import List from './components/list';
 class App extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      names: [],
+    };
   }
 
   handleOnSubmit = event => {
     event.preventDefault();
     const inputValue = event.target.name.value;
-    console.log('click click', inputValue);
+    const { names: currentState } = this.state;
+    const newState = [...currentState, inputValue];
+
+    this.setState({ names: newState });
   };
 
   render() {
+    console.log(this.state.names);
+
     return (
       <>
         <h1>I am a title</h1>
