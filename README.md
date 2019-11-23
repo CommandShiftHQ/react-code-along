@@ -33,7 +33,7 @@ You should see a **Hello World** message.
 
 from _Create and use App.jsx_ upwards (the last commit comes first on the list).
 
-You can look at each step changes to the code by clicing the middle button on the right which has the commit hash, like `93063c3`. All files changed in a commit are listed with red highlights being deleted code and green highlights added code.
+You can look at each step changes to the code by clicking the middle button on the right which has the commit hash, like `93063c3`. All files changed in a commit are listed with red highlights being deleted code and green highlights added code.
 
 To see the output of any of `console.log` in the code you will need to have chrome dev tools open and tabbed to _console_
 
