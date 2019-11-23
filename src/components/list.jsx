@@ -1,11 +1,13 @@
 import React from 'react';
 
-const List = () => {
+const List = props => {
+  const { namesToDisplay } = props;
+
   return (
     <ul>
-      <li>Name 1</li>
-      <li>Name 2</li>
-      <li>Name 3</li>
+      {namesToDisplay.map(name => (
+        <li>{name}</li>
+      ))}
     </ul>
   );
 };
