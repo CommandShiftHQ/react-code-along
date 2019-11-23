@@ -20,7 +20,7 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.names);
+    const { names } = this.state;
 
     return (
       <>
@@ -30,7 +30,7 @@ class App extends Component {
         <br />
         <br />
         <br />
-        <List />
+        <List namesToDisplay={names} />
       </>
     );
   }
