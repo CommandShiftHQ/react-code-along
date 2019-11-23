@@ -3,6 +3,11 @@ import Form from './components/form';
 import List from './components/list';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   handleOnSubmit = event => {
     event.preventDefault();
     const inputValue = event.target.name.value;
