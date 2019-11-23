@@ -1,11 +1,7 @@
 import React from 'react';
 
-const Form = () => {
-  const handleOnSubmit = event => {
-    event.preventDefault();
-    const inputValue = event.target.name.value;
-    console.log('click click', inputValue);
-  };
+const Form = props => {
+  const { handleOnSubmit } = props;
 
   return (
     <form onSubmit={handleOnSubmit}>
