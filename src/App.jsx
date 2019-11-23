@@ -1,16 +1,11 @@
 import React from 'react';
+import Form from './components/form';
 
 const App = () => {
   return (
     <>
       <h1>I am a title</h1>
-      <form>
-        <label htmlFor="name">
-          Name:
-          <input id="name" type="text" />
-        </label>
-        <button type="submit">Click me!</button>
-      </form>
+      <Form />
       <br />
       <br />
       <br />
