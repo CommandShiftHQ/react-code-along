@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const List = props => {
   const { namesToDisplay } = props;
@@ -10,6 +11,10 @@ const List = props => {
       ))}
     </ul>
   );
+};
+
+List.propTypes = {
+  namesToDisplay: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default List;
