@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from './components/form';
+import List from './components/list';
 
 const App = () => {
   return (
@@ -10,11 +11,7 @@ const App = () => {
       <br />
       <br />
       <br />
-      <ul>
-        <li>Name 1</li>
-        <li>Name 2</li>
-        <li>Name 3</li>
-      </ul>
+      <List />
     </>
   );
 };
